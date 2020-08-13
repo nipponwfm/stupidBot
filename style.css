@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+#map {
+  position: relative;
+}
+
+#map .point {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  z-index: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#map #player {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  z-index: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -webkit-transition: top 0.5s linear, left 0.5s linear;
+  transition: top 0.5s linear, left 0.5s linear;
+}
+
+#map .block {
+  background-color: gray;
+  pointer-events: none;
+}
+/*# sourceMappingURL=style.css.map */
